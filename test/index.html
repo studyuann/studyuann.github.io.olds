@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:::페이스샵에 오신것을 환영합니다. </title>
+    <link href="reset.css" rel="stylesheet">
+    <!-- nomalize 혹은 reset css을 다운로드 받은 후 초기 화면을 초기화 혹은 정상화 작업 실행 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR" rel="stylesheet">
+    <!-- 웹사이트 폰트를 다운로드 받은후 링크로 달아준다. -->
+    <style>
+        /*콘텐츠 영역 시작*/
+        /*하나의 큰 틀이 바뀔 경우 cleear both을 의무적으로 쳐준다.*/
+        .content {
+            clear: both;
+            padding-top: 10px;
+        }
+        /*메뉴 밑에 줄 생성*/
+        .content:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+        }
+        /* 상품목록 서식 */
+        .lst {
+            clear: both;
+            width: 990px;
+            margin: 10px auto;
+        }
+        /*전체의 공간 1280px 에서의 300 크기 만큼 각각 조각이 되기대문에 4개 혹은 3개로 출력*/
+        .lst li {
+            float: left;
+            margin: 15px;
+        }       
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <hd><a href="" class="logo">
+                    <img src="http://placehold.it/100x45/2c8" alt="">
+                </a></hd>
+            <h3 class="tit2">메인</h3>
+            <nav class="tnb">
+                <ul>
+                    <li><a href="">상단1</a></li>
+                    <li><a href="">상단2</a></li>
+                    <li><a href="">상단3</a></li>
+                </ul>
+            </nav>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="brand.html">브랜드</a></li>
+                    <li><a href="product.html">상품</a></li>
+                    <li><a href="event.html">이벤트</a></li>
+                    <li><a href="review.html">리뷰</a></li>
+                    <li><a href="custom.html">고객센터</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content">           
+            <figure class="sub_vs"><img src="https://placehold.it/1280x360/333" alt=""></figure>
+            <section class="con">
+                <h2>메인 페이지 </h2>
+            </section>
+        </main>
+
+        <footer class="ft">
+            <nav class="fnb">
+                <ul>
+                    <li><a href="">하단링크1</a></li>
+                    <li><a href="">하단링크2</a></li>
+                    <li><a href="">하단링크3</a></li>
+                    <li><a href="">하단링크4</a></li>
+                    <li><a href="">하단링크5</a></li>
+                </ul>
+            </nav>
+            <div class="ft_wrap">
+                <p class="addr">서울 특별시 종로구 관철동 24-4 미래빌딩 509호 | 02-485-2748</p>
+                <p class="copyright">Copyright(C) 2020. Kim.kt All rights reserved</p>
+            </div>
+        </footer>    
+    </div>
+    <!--https://enjoytools.net/xe/board_vngc57/4679-->
+    
+</body>
+
+</html>

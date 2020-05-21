@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    min-width: 1280px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 폰트 적용하기 */
+body,
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 폰트 굵기 변경 하기 */
+body,
+html {
+    font-weight: 400;
+}
+
+/* a태그 클릭시 자국이 남는 부분 제거 문구 */
+a {
+    user-select: none;
+}
+
+/* 공통 스타일 */
+.tit2 {
+    color: deeppink;
+    position: absolute;
+    width: 50%;
+    top: 20px;
+    font-size: 32px;
+    left: 25%;
+    text-align: center;
+}
+
+/*warp 부분 크기 고정 / 보폭(중앙배열) / */
+.wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 헤더 영역 스타일 */
+.hd {
+    width: 100%;
+    height: 140px;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+
+.tnb {
+    float: right;
+    margin-top: 20px;
+}
+
+.tnb li {
+    float: left;
+    margin-left: 20px;
+}
+
+.tnb li a {
+    color: #333;
+}
+
+.tnb li a:hover {
+    color: tomato;
+}
+
+.gnb {
+    clear: both;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.gnb li {
+    float: left;
+    width: 20%;
+}
+
+.gnb li a {
+    display: block;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 2px solid transparent;
+}
+
+.gnb li a:hover {
+    /*color:#fff;*/
+    /*background-color:deeppink;*/
+    border-bottom: 2px solid deeppink;
+    color: deeppink;
+}
+/*푸터 영역 서식*/
+.ft {
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 3px solid #333;
+    background-color: #333;
+    color: #fff;
+}
+
+.ft_wrap,
+.fnb {
+    clear: both;
+    width: 1280px;
+    margin: 10px auto;
+}
+
+.fnb li {
+    float: left;
+    padding: 15px;
+}
+
+.fnb li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.ft_wrap {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+/* 헤더 영역 스타일 */
+/*        .hd {width: 100%;height: 140px; position: relative;}
+/*로고 a요소는 인라인 요소이기에 블록요소로 만들어 준 다음 float 좌측으로 미루고 상단 마진을 20px*/
+/*       .logo {display:block;float:left;margin-top: 20px;}
+/*tnb를 우측으로 붙여 준 다음 한줄로 li 요소끼리 20px 씩 띄어준다*/
+/*        .tnb { float:right;}
+/*        .tnb ul li {float:left; margin-left: 20px;}
+/*       /* 블럭 요소의 float 를 클리어 */
+/*        .gnb {clear:both; width: 100%; position:absolute; bottom: 0; left: 0;}
+/*       /* 좌측 라인으로 밀 경우에는 float를 left만 사용 하면 된다. */
+/*        .gnb li {float:left; width: 20%; }
+/*        .gnb li a {color: #333; font-size: 32px;}
+
+/*마우스 포인트를 올렸을때 밑줄을 생성할려 할 경우 
+li 측에 밑줄을 먼저 생성한 이후 li a 측에서 그 공간을 사용 하게끔 한다*/

@@ -1,0 +1,39 @@
+@charset "utf-8";
+ /*콘텐츠 영역 시작*/
+
+        /*a 태그는 따로 색상을 지정해주어야 한다.*/
+        .breadcrumb a {
+            color: #333;
+        }
+
+        .con {
+            clear: both;
+            width: 100%;
+        }
+
+        .sub_tit1 {
+            line-height: 3.6;
+            text-align: center;
+        }
+
+
+        /*하나의 큰 틀이 바뀔 경우 cleear both을 의무적으로 쳐준다.*/
+        .content {
+            clear: both;
+            padding-top: 10px;
+        }
+
+        /*메뉴 밑에 줄 생성*/
+        .content:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+        }
+
+        .breadcrumb {
+            height: 42px;
+            line-height: 42px;
+            color: #333;
+        }
